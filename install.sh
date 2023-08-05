@@ -89,4 +89,4 @@ else
 fi
 
 
-echo "Now run the kitty terminal emulator run nvim and then, in command mode, execute PackerInstall. After that run tmux and use the shortcut <prefix-I> to install the whatever plugins there are. Have fun"
+echo "Now run the kitty terminal emulator run nvim and then, in command mode, execute PackerInstall. After that run tmux and use the shortcut <prefix-I> to install whatever plugins there are. Have fun"
