@@ -1,5 +1,7 @@
 # dev-setup
 
+Debian/Ubuntu was used as base system for this set up
+
 1. Run the install script for the needed packages
 2. Clone the asdf repository and set it up
 
