@@ -6,4 +6,4 @@ if [ "$EUID" -ne 0 ]; then
 fi
 
 apt update
-apt install curl git kitty tmux -y
+apt install curl git tmux fonts-firacode -y
