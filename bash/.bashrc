@@ -211,7 +211,9 @@ fi
 # Aliases / Functions
 #-------------------------------------------------------------------------------
 
-source .bash_aliases
+if [[ -f "$HOME/.bash_aliases" ]]; then
+    source "$HOME/.bash_aliases"
+fi
 
 alias ls='ls --color=auto'
 alias dir='dir --color=auto'
