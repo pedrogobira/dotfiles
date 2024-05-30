@@ -34,5 +34,3 @@ alias cdv="cd ~/.config/nvim/"
 alias cdics="cd ~/TExSandbox/monolitico/ics/"
 alias cdt="cd ~/TExSandbox/tarefas/"
 alias cdl="cd ~/TExSandbox/scripts/controle && venv"
-
-source .bash_secrets
