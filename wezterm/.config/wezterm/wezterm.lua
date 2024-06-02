@@ -14,7 +14,7 @@ config.window_padding = {
 config.hide_mouse_cursor_when_typing = false
 
 -- This is where you actually apply your config choices
-config.font = wezterm.font 'JetBrainsMonoNL Nerd Font Mono'
+config.font = wezterm.font('JetBrainsMonoNL Nerd Font Mono', { weight = 'Medium', italic = false })
 config.font_size = 10.0
 config.line_height = 1.2
 
