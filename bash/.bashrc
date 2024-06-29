@@ -63,7 +63,8 @@ PATH="$HOME/.local/bin:$PATH"
 
 # asdf toolbelt
 test -d "$HOME/.asdf" &&
-. "$HOME/.asdf/asdf.sh"
+. "$HOME/.asdf/asdf.sh" &&
+. "$HOME/.asdf/completions/asdf.bash"
 
 #-------------------------------------------------------------------------------
 # Env. Configuration
