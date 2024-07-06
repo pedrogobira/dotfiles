@@ -43,6 +43,7 @@ case $UNAME in
         # Various sbins
         PATH="/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin"
         PATH="/usr/local/bin:$PATH"
+        PATH="/snap/bin:$PATH"
         ;;
 esac
 
