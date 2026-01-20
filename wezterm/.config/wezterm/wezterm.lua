@@ -14,9 +14,9 @@ config.window_padding = {
 config.hide_mouse_cursor_when_typing = false
 
 -- This is where you actually apply your config choices
-config.font_size = 13.0
-config.line_height = 1.5
-config.font = wezterm.font('FiraCode Nerd Font')
+config.font_size = 9.75
+config.line_height = 1.2
+config.font = wezterm.font('JetBrains Mono Nerd Font')
 
 config.window_decorations = 'RESIZE'
 
