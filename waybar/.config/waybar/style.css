@@ -1,14 +1,32 @@
-#pulseaudio, #pulseaudio.microphone, #bluetooth, #network, #language {
+* {
+    border: none;
+    font-family: "JetBrains Mono";
+    font-size: 13px;
+    text-transform: uppercase; /* Optional: forces text to all caps for a consistent look */
+}
+
+window#waybar {
+    background: #000000;
     color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+#workspaces button {
+    padding: 0 5px;
+    color: #888888;
+}
+
+#workspaces button.focused {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+#pulseaudio, #bluetooth, #network, #power-profiles-daemon, #battery, #language {
     padding: 0 10px;
     border-left: 1px solid #ffffff;
 }
 
-/* Highlight if muted or disconnected */
-#pulseaudio.muted, #pulseaudio.microphone.muted {
-    color: #888888;
-}
-
-#network.disconnected {
-    color: #ff0000; /* Optional: Red alert for no internet, or keep #888888 for mono */
+#battery.critical:not(.charging) {
+    background-color: #ffffff;
+    color: #000000;
 }

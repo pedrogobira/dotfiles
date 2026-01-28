@@ -5,7 +5,15 @@
     "spacing": 10,
     "modules-left": ["sway/workspaces", "sway/language"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "pulseaudio#microphone", "bluetooth", "network", "battery", "tray"],
+    "modules-right": [
+        "pulseaudio", 
+        "pulseaudio#microphone", 
+        "bluetooth", 
+        "network", 
+        "power-profiles-daemon", 
+        "battery", 
+        "tray"
+    ],
 
     "sway/language": {
         "format": "KYBD: {}"
@@ -13,20 +21,21 @@
 
     "pulseaudio": {
         "format": "VOL: {volume}%",
-        "format-muted": "VOL: MUT",
+        "format-muted": "VOL: MUTED",
         "on-click": "pavucontrol"
     },
 
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "format-source": "MIC: {volume}%",
-        "format-source-muted": "MIC: MUT",
+        "format-source-muted": "MIC: MUTED",
         "on-click": "pavucontrol"
     },
 
     "bluetooth": {
         "format": "BT: {status}",
         "format-connected": "BT: {device_alias}",
+        "format-connected-battery": "BT: {device_alias} {device_battery_percentage}%",
         "on-click": "blueman-manager"
     },
 
@@ -37,9 +46,20 @@
         "on-click": "nm-connection-editor"
     },
 
+    "power-profiles-daemon": {
+        "format": "PWR: {profile}",
+        "tooltip": true
+    },
+
     "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
         "format": "BAT: {capacity}%",
-        "format-charging": "CHG: {capacity}%"
+        "format-charging": "CHARGING: {capacity}%",
+        "format-plugged": "PLUGGED: {capacity}%",
+        "format-alt": "TIME: {time}"
     },
 
     "clock": {
