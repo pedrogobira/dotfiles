@@ -1,0 +1,48 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 32,
+    "spacing": 10,
+    "modules-left": ["sway/workspaces", "sway/language"],
+    "modules-center": ["clock"],
+    "modules-right": ["pulseaudio", "pulseaudio#microphone", "bluetooth", "network", "battery", "tray"],
+
+    "sway/language": {
+        "format": "KYBD: {}"
+    },
+
+    "pulseaudio": {
+        "format": "VOL: {volume}%",
+        "format-muted": "VOL: MUT",
+        "on-click": "pavucontrol"
+    },
+
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": "MIC: {volume}%",
+        "format-source-muted": "MIC: MUT",
+        "on-click": "pavucontrol"
+    },
+
+    "bluetooth": {
+        "format": "BT: {status}",
+        "format-connected": "BT: {device_alias}",
+        "on-click": "blueman-manager"
+    },
+
+    "network": {
+        "format-wifi": "WIFI: {essid}",
+        "format-ethernet": "ETH: {ipaddr}",
+        "format-disconnected": "OFFLINE",
+        "on-click": "nm-connection-editor"
+    },
+
+    "battery": {
+        "format": "BAT: {capacity}%",
+        "format-charging": "CHG: {capacity}%"
+    },
+
+    "clock": {
+        "format": "{:%H:%M | %Y-%m-%d}"
+    }
+}

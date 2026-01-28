@@ -1,0 +1,14 @@
+#pulseaudio, #pulseaudio.microphone, #bluetooth, #network, #language {
+    color: #ffffff;
+    padding: 0 10px;
+    border-left: 1px solid #ffffff;
+}
+
+/* Highlight if muted or disconnected */
+#pulseaudio.muted, #pulseaudio.microphone.muted {
+    color: #888888;
+}
+
+#network.disconnected {
+    color: #ff0000; /* Optional: Red alert for no internet, or keep #888888 for mono */
+}
