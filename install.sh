@@ -9,9 +9,9 @@ echo "Note: Built for Debian"
 # 1. Update and install core system dependencies
 sudo apt update && sudo apt upgrade -y
 echo "Installing Window Manager, System Tools, and Laptop Support..."
-sudo apt install -y sway swaybg swaylock swayidle waybar wofi alacritty \
+sudo apt install -y curl sway swaybg swaylock swayidle waybar wofi alacritty \
     fonts-jetbrains-mono xdg-desktop-portal-wlr xwayland git stow \
-    xdg-utils tlp tlp-rdw power-profiles-daemon
+    xdg-utils tlp tlp-rdw
 
 # 2. Install Applets and Hardware Management
 echo "Installing applets and hardware tools..."
@@ -21,7 +21,6 @@ sudo apt install -y network-manager-gnome blueman pavucontrol \
 # 3. Enable Laptop Power Savings & Services
 sudo systemctl enable tlp
 sudo tlp start
-sudo systemctl enable --now power-profiles-daemon
 
 # 4. Clone your Dotfiles
 DOTFILES_DIR="$HOME/dotfiles"
