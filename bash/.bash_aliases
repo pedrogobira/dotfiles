@@ -12,6 +12,7 @@ alias dev='cd ~/dev' # or wherever you keep your code
 # =============================================================================
 # DEVELOPMENT TOOLS
 # =============================================================================
+alias nvim='nvim-linux-x86_64.appimage'
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'

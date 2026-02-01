@@ -26,6 +26,7 @@ export _JAVA_AWT_WM_NONREPARENTING=1
 export MOZ_ENABLE_WAYLAND=1  # Firefox Wayland support
 export QT_QPA_PLATFORM=wayland
 export GDK_BACKEND=wayland,x11
+export QT_QPA_PLATFORMTHEME=qt6ct
 
 # 4. Auto-Start Sway on TTY1
 # -----------------------------------------------
