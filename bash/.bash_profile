@@ -12,6 +12,8 @@ export BROWSER='firefox' # or your preferred browser
 
 # Add local bin to PATH
 export PATH="$HOME/.local/bin:$PATH"
+# Add asdf to PATH
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 
 # 3. Wayland & Graphics Fixes (Essential for Sway)
 # -----------------------------------------------
