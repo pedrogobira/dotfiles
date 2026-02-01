@@ -4,15 +4,15 @@
     "height": 32,
     "spacing": 10,
     "modules-left": ["sway/workspaces", "sway/language"],
-    "modules-center": ["clock"],
+    "modules-center": [],
     "modules-right": [
         "pulseaudio", 
         "pulseaudio#microphone", 
         "bluetooth", 
         "network", 
-        "power-profiles-daemon", 
         "battery", 
-        "tray"
+	"clock",
+	"tray"
     ],
 
     "sway/language": {
@@ -46,11 +46,6 @@
         "on-click": "nm-connection-editor"
     },
 
-    "power-profiles-daemon": {
-        "format": "PWR: {profile}",
-        "tooltip": true
-    },
-
     "battery": {
         "states": {
             "warning": 30,
@@ -63,6 +58,6 @@
     },
 
     "clock": {
-        "format": "{:%H:%M | %Y-%m-%d}"
+        "format": "{:%Y-%m-%d %H:%M}"
     }
 }
