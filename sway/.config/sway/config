@@ -3,16 +3,17 @@
 # =============================================================================
 set $mod Mod4
 set $term alacritty
-set $menu wofi --show run
+set $menu wofi --show drun
 
 # =============================================================================
 # APPEARANCE
 # =============================================================================
-output * bg #000000 solid_color
+output * bg $HOME/Imagens/wallpaper.jpg fill
 font pango:JetBrains Mono 10
 default_border pixel 2
 default_floating_border normal
 smart_borders on
+gaps inner 5
 
 client.focused          #ffffff #000000 #ffffff #ffffff #ffffff
 client.focused_inactive #444444 #000000 #ffffff #444444 #444444
@@ -49,8 +50,8 @@ exec swayidle -w \
 # =============================================================================
 bindsym $mod+Return exec $term
 bindsym $mod+d exec $menu
-bindsym $mod+Shift+q kill
-bindsym $mod+Shift+c reload
+bindsym $mod+q kill
+bindsym $mod+Shift+r reload
 bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit Sway?' -b 'Yes' 'swaymsg exit'
 
 # Focus & Move (Vim style)
@@ -94,8 +95,9 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 # =============================================================================
 # AUTOSTART & BAR
 # =============================================================================
-exec nm-applet --indicator
-exec blueman-applet
+
+#exec nm-applet --indicator
+#exec blueman-applet
 
 bar {
     swaybar_command waybar
