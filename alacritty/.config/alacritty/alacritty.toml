@@ -1,0 +1,45 @@
+[window]
+padding = { x = 12, y = 12 }
+decorations = "none"
+opacity = 1.0
+dynamic_title = true
+
+[font]
+normal = { family = "JetBrains Mono", style = "Regular" }
+bold = { family = "JetBrains Mono", style = "Bold" }
+italic = { family = "JetBrains Mono", style = "Italic" }
+size = 10.0
+
+[colors.primary]
+background = "#000000"
+foreground = "#ffffff"
+
+[colors.cursor]
+text = "#000000"
+cursor = "#ffffff"
+
+[colors.normal]
+black =   "#000000"
+red =     "#ff5555" # Combinando com seu status de bateria crítica
+green =   "#55ff55" # Combinando com sua bateria carregando
+yellow =  "#ffaa00" # Combinando com seu alerta de bateria
+blue =    "#808080" # Cinza azulado sutil
+magenta = "#ffffff"
+cyan =    "#ffffff"
+white =   "#ffffff"
+
+[colors.bright]
+black =   "#666666" # Mesmo cinza dos seus workspaces inativos
+red =     "#ff5555"
+green =   "#55ff55"
+yellow =  "#ffaa00"
+blue =    "#808080"
+magenta = "#ffffff"
+cyan =    "#ffffff"
+white =   "#ffffff"
+
+[selection]
+save_to_clipboard = true
+
+[cursor]
+style = { shape = "Beam", blinking = "On" }
