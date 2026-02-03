@@ -7,7 +7,7 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias dots='cd ~/dotfiles'
 alias dl='cd ~/Downloads'
-alias dev='cd ~/dev' # or wherever you keep your code
+alias dev='cd ~/.local/src'
 
 # =============================================================================
 # DEVELOPMENT TOOLS
@@ -22,7 +22,7 @@ alias gp='git push'
 alias gl='git log --oneline --graph --all'
 
 # =============================================================================
-# SYSTEM MANAGEMENT (Debian 13)
+# SYSTEM MANAGEMENT
 # =============================================================================
 alias update='sudo apt update && sudo apt upgrade'
 alias install='sudo apt install'
@@ -46,8 +46,3 @@ alias reload='source ~/.bashrc'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-# System info
-alias myip='curl ifconfig.me'
-alias df='df -h'
-alias free='free -m'

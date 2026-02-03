@@ -1,32 +1,28 @@
 #!/bin/bash
 
-# 1. Non-interactive shell check
+# Non-interactive shell check
 [[ $- != *i* ]] && return
 
-# 2. Shell History
+# Shell History
 HISTCONTROL=ignoreboth
 HISTSIZE=1000
 HISTFILESIZE=2000
 shopt -s histappend
 shopt -s checkwinsize
 
-# 3. The "Black & White" Minimalist Prompt
-# [user@host:dir]$ 
-PS1='[\u@\h:\W]\$ '
-
-# 4. Color support (for ls and grep only)
+# Color support (for ls and grep only)
 if [ -x /usr/bin/dircolors ]; then
     eval "$(dircolors -b)"
     alias ls='ls --color=auto'
     alias grep='grep --color=auto'
 fi
 
-# 5. Load Aliases (Segregated)
+# Load Aliases (Segregated)
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-# 6. Helper Functions
+# Helper Functions
 # Extract utility
 extract() {
     if [ -f "$1" ] ; then
