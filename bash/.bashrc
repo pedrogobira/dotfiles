@@ -17,9 +17,14 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
 fi
 
-# Load Aliases (Segregated)
+# Load Aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
+fi
+
+# Load Secret Aliases
+if [ -f ~/.bash_secrets ]; then
+    . ~/.bash_secrets
 fi
 
 # Helper Functions
