@@ -6,7 +6,6 @@ Welcome to my dotfiles repository! This repository contains all my custom config
 
 ### Prerequisites
 
-- JetBrains Mono Nerd Font
 - [GNU Stow](https://www.gnu.org/software/stow/)
 
 ### Installation
