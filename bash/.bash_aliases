@@ -18,7 +18,12 @@ alias vi='nvim'
 alias vim='nvim'
 alias g='git'
 alias gs='git status'
-alias gp='git push'
+alias ga='git add'
+alias gc='git commit'
+alias gps='git push'
+alias gpl='git pull'
+alias gck='git checkout'
+alias gbd='git branch -D'
 alias gl='git log --oneline --graph --all'
 
 # =============================================================================
