@@ -26,6 +26,11 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
+if [ -f "$HOME/.local/bin/nvim-linux-x86_64.appimage" ] ; then
+    export EDITOR="$HOME/.local/bin/nvim-linux-x86_64.appimage"
+    export VISUAL="$EDITOR"
+fi
+
 # added by rust install
 . "$HOME/.cargo/env"
 
