@@ -24,9 +24,10 @@ alias gps='git push'
 alias gpl='git pull'
 alias gck='git checkout'
 alias gbd='git branch -D'
-alias gl='git log'
-alias glo='git log --oneline'
+alias gl='git log --all'
+alias glo='git log --all --oneline'
 alias gd='git diff'
+alias gfa='git fetch --all'
 
 # =============================================================================
 # SYSTEM MANAGEMENT
