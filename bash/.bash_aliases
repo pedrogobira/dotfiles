@@ -54,3 +54,6 @@ alias reload='source ~/.bashrc'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
+
+# Safe TERM for ssh connections
+alias sshx='TERM=xterm-256color ssh'
